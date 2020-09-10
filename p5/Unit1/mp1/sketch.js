@@ -39,20 +39,20 @@ translate(0,100);
 fill('black');
 ellipse(222, 107, 190, 200)
 
-
+//hair
 push();
 translate(-250,-50);
-    fill("black")
+    fill('black')
            ellipse(383,126,60,60);
            ellipse(383,150,60,60);
            ellipse(383,200,60,60);
            ellipse(383,230,60,60);
            ellipse(383,270,60,60);
 pop();
-
+ 
 push();
 translate(-70,-50);
-    fill("black")
+    fill('black')
            ellipse(383,126,60,60);
            ellipse(383,150,60,60);
            ellipse(383,200,60,60);
@@ -83,9 +83,9 @@ pop();
 strokeWeight(6);
 fill(130, 87, 38);
   if(mouseIsPressed){
-      arc(222, 280, 120, 100, PI, 0); // frown
+      arc(222, 280, 110, 100, PI, 0); // frown
   } else {
-    arc(222, 220, 130, 110, 0, PI); // smile - (this line is correct)
+    arc(222, 220, 120, 110, 0, PI); // smile - (this line is correct)
 
 
   }
