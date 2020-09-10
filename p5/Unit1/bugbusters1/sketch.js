@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw() {
-
   // the background color
   if(mouseIsPressed){
   background('red');
@@ -25,7 +24,7 @@ ellipse(width / 2, height / 2, CENTER, CENTER);
 if(mouseIsPressed){
   arc(200, 210, 130, 100, 0, PI); // smile - (this line is correct)
 } else {
-  arc(0, 270, 130, 100, PI, 0); // frown
+  arc(200, 270, 130, 100, PI, 0); // frown
 
 }
 
