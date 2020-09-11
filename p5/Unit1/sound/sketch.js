@@ -19,5 +19,9 @@ function mouseReleased() {
     } else{
       song1.loop();
     }
+function touchStarted() {
+  getAudioContext().resume();
+}
+
 
 }
