@@ -1,8 +1,27 @@
+var x = 0;
+
+
 function setup() {
   createCanvas(500, 500);
 }
 
 function draw() {
+background(100);
+
+push();
+translate(x , 0);
+//rect(0 , 250 , 50 , 50);
+avatar();
+x = x + 5;
+if(x > width){
+  x = -300;
+}
+pop();
+
+
+}
+
+function avatar() {
   strokeWeight(4);
   if (mouseIsPressed) {
     background('gray');
@@ -68,11 +87,4 @@ fill(130, 87, 38);
   }
   strokeWeight(1);
   pop();
-
-
-
 }
-
- function mouseReleased() {
-   console.log(mouseX + ',' + mouseY);
- }
