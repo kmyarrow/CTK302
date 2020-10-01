@@ -26,7 +26,11 @@ x = x + 1;
 
   }
 
+
+
 rect(x, 10, 10, 10) ;
+if ( x > width )  x = 0;
+
 
   // extra stuff for debugging
   textSize(18);
