@@ -4,7 +4,7 @@ let state = 0;
 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
 
   img1 = loadImage("assets/flowers.jpg");
   img2 = loadImage("assets/2fingers.png");
