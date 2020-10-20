@@ -7,12 +7,12 @@ function setup() {
   //  cars.push(new Car());
 
   //}
-  
+
   noStroke();
 }
 
 function draw() {
-  background('black');
+  background("black");
   cars.push(new Car());
 
 
