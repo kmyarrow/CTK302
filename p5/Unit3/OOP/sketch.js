@@ -1,5 +1,6 @@
 let cars = [];
 
+
 function setup() {
   createCanvas(500, 500);
 
@@ -7,12 +8,13 @@ function setup() {
   //  cars.push(new Car());
 
   //}
-
   noStroke();
 }
 
 function draw() {
   background("black");
+
+
   cars.push(new Car());
 
 
@@ -30,7 +32,7 @@ class Car {
 
   constructor() {
     // attributes
-    this.pos = createVector(100, 100);
+    this.pos = createVector(100,100);
     this.vel = createVector(random(10), random(10));
     this.r = random(255);
     this.g = random(255);
