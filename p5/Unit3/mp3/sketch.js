@@ -18,12 +18,12 @@ function setup() {
 
 
   //songplay
-  pinkthing = loadImage("assets/amoungus.png");
+  redthing = loadImage("assets/redthing.png");
 
   i1 = loadImage("assets/greenthing.png");
   i2 = loadImage("assets/lightthing.png");
   i3 = loadImage("assets/purplething.png");
-  i4 = loadImage("assets/redthing.png");
+  i4 = loadImage("assets/amoungus.png");
 
   //f1 = loadFont("assets/KGChasingCars.ttf");
   //f2 = loadFont("assets/rock.ttf");
@@ -55,7 +55,7 @@ function draw() {
     case 1:
       game();
       timer++;
-      if (timer > 20 * 60) {
+      if (timer > 15 * 60) {
         state = 3;
       }
       break;
@@ -97,7 +97,7 @@ function game() {
   //draw the frog
   //fill('green');
   //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image(pinkthing, frogPos.x, frogPos.y, 100, 100);
+  image(redthing, frogPos.x, frogPos.y, 130, 130);
   checkForKeys();
 }
 
