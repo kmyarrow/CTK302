@@ -8,6 +8,13 @@ let state = 0;
 let timer = 0;
 let bg2;
 
+function preload() {
+  song1 = loadSound("assets/rolling.mp3");
+
+  song1.loop();
+  song1.pause();
+
+}
 
 function setup() {
   createCanvas(700, 700);
@@ -25,6 +32,8 @@ function setup() {
   i3 = loadImage("assets/purplething.png");
   i4 = loadImage("assets/amoungus.png");
 
+
+
   //f1 = loadFont("assets/KGChasingCars.ttf");
   //f2 = loadFont("assets/rock.ttf");
   //f3 = loadFont("assets/spaceage.ttf");
@@ -34,7 +43,7 @@ function setup() {
 
 
 
-  images = [i1, i2, i3,i4];
+  images = [i1, i2, i3, i4];
 
   // Spawn objects
   for (let i = 0; i < maxCars; i++) {
@@ -44,6 +53,7 @@ function setup() {
 
 function draw() {
   switch (state) {
+
     case 0:
       //background('grey');
       image(bg2, width / 2, height / 2, width, height);
@@ -52,19 +62,23 @@ function draw() {
       text("Welcome to my game!", width / 2, height / 2);
       break;
 
+
     case 1:
       game();
+      song1.play();
       timer++;
       if (timer > 15 * 60) {
         state = 3;
       }
       break;
 
+
     case 2:
       background('red');
       textSize(60);
       text("YAY YOU WON!!", width / 2, height / 2);
       break;
+
 
     case 3:
       background('purple');
@@ -122,6 +136,7 @@ function mouseReleased() {
   switch (state) {
     case 0:
       state = 1;
+      song1.loop();
       break;
 
     case 2: //they won!
@@ -176,4 +191,8 @@ class Car {
 
   }
 
+}
+
+function touchStarted() {
+  getAudioContext().resume();
 }
