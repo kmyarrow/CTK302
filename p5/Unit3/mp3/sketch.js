@@ -65,7 +65,6 @@ function draw() {
 
     case 1:
       game();
-      song1.play();
       timer++;
       if (timer > 15 * 60) {
         state = 3;
@@ -136,7 +135,6 @@ function mouseReleased() {
   switch (state) {
     case 0:
       state = 1;
-      song1.loop();
       break;
 
     case 2: //they won!

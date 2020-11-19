@@ -61,7 +61,6 @@ class Bubble {
   }
 
 
-  display() {
     // if (this.shape == "Square") {
     //   rect(this.pos.x, this.pos.y, 50, 50);
     // } else {
