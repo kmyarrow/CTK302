@@ -1,4 +1,5 @@
 var bubbles = [];
+let bgImage;
 
 function setup() {
 
@@ -17,6 +18,7 @@ function setup() {
 
   // Regular setup code we usually have
   createCanvas(600, 600);
+
   textAlign(CENTER);
   ellipseMode(CENTER);
   rectMode(CENTER);
@@ -38,7 +40,7 @@ function gotData(data) {
 
 
 function draw() {
-  background('blue');
+  background('purple');
 
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
@@ -60,14 +62,15 @@ class Bubble {
     this.vel = random(1, 3);
   }
 
-
+display() {
     // if (this.shape == "Square") {
     //   rect(this.pos.x, this.pos.y, 50, 50);
     // } else {
     //   ellipse(this.pos.x, this.pos.y, 50, 50);
     // }
-
-      ellipse(this.pos.x, this.pos.y, 80, 80);{
+    fill('black');
+    ellipse(this.pos.x, this.pos.y, 100, 100);
+    fill('whiite');
     text(this.name, this.pos.x, this.pos.y - 20);
     text(this.birthday, this.pos.x, this.pos.y);
     text(this.zodiac, this.pos.x, this.pos.y + 20);
