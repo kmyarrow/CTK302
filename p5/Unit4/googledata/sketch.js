@@ -66,7 +66,8 @@ class Bubble {
     // } else {
     //   ellipse(this.pos.x, this.pos.y, 50, 50);
     // }
-    ellipse(this.pos.x, this.pos.y, 80, 80);
+
+      ellipse(this.pos.x, this.pos.y, 80, 80);{
     text(this.name, this.pos.x, this.pos.y - 20);
     text(this.birthday, this.pos.x, this.pos.y);
     text(this.zodiac, this.pos.x, this.pos.y + 20);

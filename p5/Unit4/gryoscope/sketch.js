@@ -15,7 +15,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   moonImage = loadImage("assets/moon.png");
-  starsImage = loadImage("assets/starrysky.jpg")
+  starsImage = loadImage("assets/starrysky.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -25,6 +25,7 @@ function draw() {
 
   //background('#c6f5ff'); // light blue
   image(starsImage, width / 2, height / 2, width, height);
+
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
   // map(yourVar, range1_x, range1_y, range2_x, range2_y) ;
@@ -61,9 +62,9 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(50);
   textAlign(CENTER);
-  text("ctk", width / 2, height / 2);
+  text("shoot for the stars", width / 2, height / 2);
 
 }
 
